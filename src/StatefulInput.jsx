@@ -1,3 +1,4 @@
+import React from 'react';
 import {compose, withState, mapProps} from 'recompose';
 
 const Input = ({className, placeholder, updateValue}) => (
