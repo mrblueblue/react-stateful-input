@@ -1,8 +1,10 @@
 import React from 'react';
-import {compose, withState, mapProps} from 'recompose';
+import compose from 'recompose/compose';
+import withState from 'recompose/withState';
+import mapProps from 'recompose/mapProps';
 
 const Input = ({className, placeholder, updateValue}) => (
-  <input type='text' 
+  <input type='text'
     className={className}
     placeholder={placeholder}
     onChange={updateValue}
